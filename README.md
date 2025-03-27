@@ -9,6 +9,7 @@ A simple tool that takes a video and a timestamp, and creates a screenshot image
 - [How to Use](#how-to-use)
   - [On macOS 15+](#on-macos-15)
   - [On Windows 11+](#on-windows-11)
+  - [On Linux (PopOS 22.04+)](#on-linux-popos-2204)
 - [Examples](#examples)
   - [macOS Example](#macos-example)
   - [Windows Example](#windows-example)
@@ -58,6 +59,29 @@ git clone https://github.com/chris-calo/framegrab.git
    
    The timestamp format is: minutes:seconds.milliseconds
 
+### On Linux (PopOS 22.04+)
+
+1. First, make sure FFMPEG is installed (required):
+   ```
+   sudo apt install ffmpeg
+   ```
+
+2. Open Terminal
+3. Navigate to where you saved the scripts:
+   ```
+   cd path/to/framegrab
+   ```
+4. Make the script executable (you only need to do this once):
+   ```
+   chmod +x framegrab.sh
+   ```
+5. Run the tool with your video and timestamp:
+   ```
+   ./framegrab.sh path/to/your/video.mp4 01:23.456
+   ```
+   
+   The timestamp format is: minutes:seconds.milliseconds
+
 ### On Windows 11+
 
 1. Open PowerShell (right-click on the Start button and select "Windows PowerShell")
@@ -93,6 +117,16 @@ Let's say you have a video called "holiday_video.mp4" on your desktop, and you w
 ```
 
 This will create a file called "holiday_video-03-45-000.png" on your desktop.
+
+### Linux Example
+
+Let's say you have a video called "lecture.mp4" in your Videos folder, and you want a screenshot at 5 minutes and 12 seconds:
+
+```
+./framegrab.sh ~/Videos/lecture.mp4 05:12.000
+```
+
+This will create a file called "lecture-05-12-000.png" in your Videos folder.
 
 ## Troubleshooting FAQ
 
@@ -148,6 +182,24 @@ Then, to install Homebrew:
 </details>
 
 <details>
+<summary><b>FFMPEG installation issues on Linux</b></summary>
+
+If you have trouble installing FFMPEG on your Linux system:
+
+1. Make sure your package lists are up-to-date:
+   ```
+   sudo apt update
+   ```
+
+2. Then try installing FFMPEG again:
+   ```
+   sudo apt install ffmpeg
+   ```
+
+If you're still having issues, it might be due to repository configuration. On PopOS or other Debian-based systems, FFMPEG should be available in the standard repositories.
+</details>
+
+<details>
 <summary><b>What is Chocolatey (for Windows users)?</b></summary>
 
 Chocolatey is like an app store for your Windows command line. It helps install useful tools like FFMPEG. If our script suggests installing it, you can:
@@ -167,10 +219,12 @@ Make sure you're using the correct path to your video. For example:
 
 - On macOS: Use `~/Documents/myvideo.mp4` for files in your Documents folder
 - On Windows: Use full paths like `C:\Users\YourName\Videos\myvideo.mp4`
+- On Linux: Use `~/Videos/myvideo.mp4` for files in your Videos folder
 
 If your path has spaces, put it in quotes:
 - macOS: `./framegrab.sh "~/My Videos/birthday party.mp4" 01:23.456`
 - Windows: `.\framegrab.ps1 "C:\Users\YourName\My Videos\birthday party.mp4" 01:23.456`
+- Linux: `./framegrab.sh "~/My Videos/birthday party.mp4" 01:23.456`
 </details>
 
 <details>

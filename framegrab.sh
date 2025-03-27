@@ -12,9 +12,19 @@ command_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
+# Detect OS
+OS="$(uname -s)"
+
 # Check if ffmpeg is installed
 if ! command_exists ffmpeg; then
   echo "FFMPEG is not installed."
+  
+  # Linux-specific instructions for Debian-based systems
+  if [ "$OS" = "Linux" ] && command_exists apt; then
+    echo "Please install FFMPEG using apt:"
+    echo "sudo apt install ffmpeg"
+    exit 1
+  fi
   
   # Check if Homebrew is installed
   if ! command_exists brew; then
