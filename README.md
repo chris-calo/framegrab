@@ -41,7 +41,8 @@ git clone https://github.com/chris-calo/framegrab.git
 
 ## How to Use
 
-### On macOS 15+
+<details>
+<summary><b>On macOS 15+</b></summary>
 
 1. Open Terminal (find it in Applications > Utilities)
 2. Navigate to where you saved the scripts:
@@ -58,8 +59,10 @@ git clone https://github.com/chris-calo/framegrab.git
    ```
    
    The timestamp format is: minutes:seconds.milliseconds
+</details>
 
-### On Linux (Ubuntu/PopOS/Debian 22.04+)
+<details>
+<summary><b>On Linux (Ubuntu/PopOS/Debian 22.04+)</b></summary>
 
 1. First, make sure FFMPEG is installed (required):
    ```
@@ -81,8 +84,10 @@ git clone https://github.com/chris-calo/framegrab.git
    ```
    
    The timestamp format is: minutes:seconds.milliseconds
+</details>
 
-### On Windows 11+
+<details>
+<summary><b>On Windows 11+</b></summary>
 
 1. Open PowerShell (right-click on the Start button and select "Windows PowerShell")
 2. Navigate to where you saved the scripts:
@@ -95,6 +100,7 @@ git clone https://github.com/chris-calo/framegrab.git
    ```
    
    The timestamp format is: minutes:seconds.milliseconds
+</details>
 
 ## Examples
 
