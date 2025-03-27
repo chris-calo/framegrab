@@ -9,7 +9,7 @@ A simple tool that takes a video and a timestamp, and creates a screenshot image
 - [How to Use](#how-to-use)
   - [On macOS 15+](#on-macos-15)
   - [On Windows 11+](#on-windows-11)
-  - [On Linux (PopOS 22.04+)](#on-linux-popos-2204)
+  - [On Linux (Ubuntu/PopOS/Debian 22.04+)](#on-linux-popos-2204)
 - [Examples](#examples)
   - [macOS Example](#macos-example)
   - [Windows Example](#windows-example)
@@ -59,7 +59,7 @@ git clone https://github.com/chris-calo/framegrab.git
    
    The timestamp format is: minutes:seconds.milliseconds
 
-### On Linux (PopOS 22.04+)
+### On Linux (Ubuntu/PopOS/Debian 22.04+)
 
 1. First, make sure FFMPEG is installed (required):
    ```
@@ -196,7 +196,7 @@ If you have trouble installing FFMPEG on your Linux system:
    sudo apt install ffmpeg
    ```
 
-If you're still having issues, it might be due to repository configuration. On PopOS or other Debian-based systems, FFMPEG should be available in the standard repositories.
+If you're still having issues, it might be due to repository configuration. On Ubuntu/PopOS or other Debian-based systems, FFMPEG should be available in the standard repositories.
 </details>
 
 <details>
