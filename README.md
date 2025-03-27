@@ -9,10 +9,11 @@ A simple tool that takes a video and a timestamp, and creates a screenshot image
 - [How to Use](#how-to-use)
   - [On macOS 15+](#on-macos-15)
   - [On Windows 11+](#on-windows-11)
-  - [On Linux (Ubuntu/PopOS/Debian 22.04+)](#on-linux-popos-2204)
+  - [On Linux (Ubuntu/PopOS/Debian 22.04+)](#on-linux-ubuntupoposexamian-2204)
 - [Examples](#examples)
   - [macOS Example](#macos-example)
   - [Windows Example](#windows-example)
+  - [Linux Example](#linux-example)
 - [Troubleshooting FAQ](#troubleshooting-faq)
 
 ## What This Tool Does
@@ -104,7 +105,8 @@ git clone https://github.com/chris-calo/framegrab.git
 
 ## Examples
 
-### macOS Example
+<details>
+<summary><b>macOS Example</b></summary>
 
 Let's say you have a video called "birthday_party.mp4" in your Downloads folder, and you want a screenshot at 2 minutes and 15.5 seconds:
 
@@ -113,8 +115,10 @@ Let's say you have a video called "birthday_party.mp4" in your Downloads folder,
 ```
 
 This will create a file called "birthday_party-02-15-5.png" in your Downloads folder.
+</details>
 
-### Windows Example
+<details>
+<summary><b>Windows Example</b></summary>
 
 Let's say you have a video called "holiday_video.mp4" on your desktop, and you want a screenshot at 3 minutes and 45 seconds:
 
@@ -123,8 +127,10 @@ Let's say you have a video called "holiday_video.mp4" on your desktop, and you w
 ```
 
 This will create a file called "holiday_video-03-45-000.png" on your desktop.
+</details>
 
-### Linux Example
+<details>
+<summary><b>Linux Example</b></summary>
 
 Let's say you have a video called "lecture.mp4" in your Videos folder, and you want a screenshot at 5 minutes and 12 seconds:
 
@@ -133,6 +139,7 @@ Let's say you have a video called "lecture.mp4" in your Videos folder, and you w
 ```
 
 This will create a file called "lecture-05-12-000.png" in your Videos folder.
+</details>
 
 ## Troubleshooting FAQ
 
